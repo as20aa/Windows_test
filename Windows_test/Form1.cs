@@ -15,5 +15,16 @@ namespace Windows_test
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+        }
+        private void Button_Click(object sender,EventArgs e)
+        {
+            if (((Button)sender).Name == "button1")
+                label1.Text = "打开文件以浏览";
+            else
+                label1.Text = "导入文件";
+        }
     }
 }
